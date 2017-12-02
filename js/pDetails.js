@@ -1,10 +1,7 @@
 var request = require('request');
 
-function getConditions(ids, callback) {
-    let url = "https://v3v10.vitechinc.com/solr/v_participant_detail/select?indent=on" + "&q=*:*" + "&wt=json" + "&rows=100";
-
-    // Array to store participant's details
-    let pDetails = [];
+function getDetails(id, callback) {
+    let url = "https://v3v10.vitechinc.com/solr/v_participant_detail/select?indent=on" + "&q=id:" + id + "&wt=json";
 
     request(url, function(error, response, body) {
         if (response.statusCode != 200) {
@@ -12,21 +9,23 @@ function getConditions(ids, callback) {
         }
         let parsedBody = JSON.parse(body);
         let data = parsedBody.response.docs;
-        for (let i=0; i<data.length; i++) {
-            // Check if person has pre_conditions; if not they are v healthy
-            if (data[i].PRE_CONDITIONS) {
-                let preCon = JSON.parse(data[i].PRE_CONDITIONS);
-                for (let j=0; j<preCon.length; j++) {
-                    let condition = preCon[j].condition_name;
-                    if (!conditions[condition]) {
-                        conditions[condition] = "1";
-                    }
-                }
-            }
-
+        let detail = data[0];
+        delete detail.EMPLOYMENT_STATUS;
+        delete detail.PEOPLE_COVERED;
+        delete detail.collection_id;
+        delete detail._version_;
+        if (detail.TOBACCO === "No") {
+            detail.TOBACCO = 0;
+        } else {
+            detail.TOBACCO = 1;
         }
-        callback(pDetails);
+        if (detail.MARITAL_STATUS === "S") {
+            detail.MARITAL_STATUS = 0;
+        } else {
+            detail.MARITAL_STATUS = 1;
+        }
+        callback(detail);
     });
 }
 
-exports.getConditions = getConditions;
+exports.getDetails = getDetails;
