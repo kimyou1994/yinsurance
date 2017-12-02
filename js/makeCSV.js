@@ -34,7 +34,7 @@ csv(headers, function (err, res) {
 
 let data = {};
 
-participant.getParticipant("California", function (participants) {
+participant.getParticipant("Vermont", function (participants) {
     for (let i=0; i<participants.length; i++) {
         let cur = participants[i];
         let p = [];
