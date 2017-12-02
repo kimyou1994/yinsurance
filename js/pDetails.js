@@ -1,11 +1,10 @@
 var request = require('request');
-var fs = require('fs');
 
-function getConditions() {
+function getConditions(ids, callback) {
     let url = "https://v3v10.vitechinc.com/solr/v_participant_detail/select?indent=on" + "&q=*:*" + "&wt=json" + "&rows=100";
 
-    // Object to store conditions
-    let conditions = {};
+    // Array to store participant's details
+    let pDetails = [];
 
     request(url, function(error, response, body) {
         if (response.statusCode != 200) {
@@ -26,12 +25,7 @@ function getConditions() {
             }
 
         }
-        let keys = Object.keys(conditions).join("\n");
-        // fs.writeFile('conditions.txt', keys);
-        console.log("===== Pre-Conditions =====");
-        console.log(keys);
-
-        return conditions;
+        callback(pDetails);
     });
 }
 

@@ -1,8 +1,8 @@
 id,age,sex,state,city,income,bmi,smoke,married,hepB,cPalsy,diarrhea,tachycardia,apnea,fracture,heartBeat,type2,hiv,hemorrhage
 1318,23,M,Alaska,Akutan
 1319,18,F,Alaska,Cold Bay
-1320,18,M,Alaska,False Pass
 1321,18,F,Alaska,King Cove
+1320,18,M,Alaska,False Pass
 1324,22,M,Alaska,Atka
 1325,21,F,Alaska,Saint George Island
 1326,23,M,Alaska,Nikolski
@@ -37,8 +37,8 @@ id,age,sex,state,city,income,bmi,smoke,married,hepB,cPalsy,diarrhea,tachycardia,
 1368,21,M,Alaska,Eek
 1374,21,M,Alaska,Kwigillingok
 1377,21,F,Alaska,Napakiak
-1378,23,M,Alaska,Toksook Bay
 1379,22,F,Alaska,Nunapitchuk
+1378,23,M,Alaska,Toksook Bay
 1380,18,M,Alaska,Platinum
 1381,22,F,Alaska,Quinhagak
 1382,24,M,Alaska,Red Devil
@@ -73,8 +73,8 @@ id,age,sex,state,city,income,bmi,smoke,married,hepB,cPalsy,diarrhea,tachycardia,
 1429,18,F,Alaska,Clam Gulch
 1430,22,M,Alaska,Cooper Landing
 1431,18,F,Alaska,Homer
-1435,24,F,Alaska,Moose Pass
 1434,24,M,Alaska,Kenai
+1435,24,F,Alaska,Moose Pass
 1436,19,M,Alaska,Nikiski
 1437,18,F,Alaska,Ninilchik
 1441,19,F,Alaska,Sterling
