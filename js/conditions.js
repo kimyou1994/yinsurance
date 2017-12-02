@@ -1,12 +1,5 @@
 var request = require('request');
 var fs = require('fs');
-var express = require('express');
-var bodyParser = require('body-parser');
-
-const app = express();
-
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
 
 let url = "https://v3v10.vitechinc.com/solr/v_participant_detail/select?indent=on" + "&q=*:*" + "&wt=json" + "&rows=5000";
 

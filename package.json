@@ -4,7 +4,8 @@
   "description": "Insurance hack using the Vitech API for YHack 2017",
   "main": "index.js",
   "scripts": {
-    "test": "node js/test.js"
+    "test": "node js/test.js",
+    "condition": "node js/conditions.js"
   },
   "repository": {
     "type": "git",
