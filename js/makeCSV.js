@@ -50,13 +50,11 @@ participant.getParticipant("Washington", function (participants) {
         p[2] = cur.sex;
         p[3] = cur.state;
         p[4] = cur.city;
-        // p.push(cur.id, cur.DOB, cur.sex, cur.state, cur.city);
         data[cur.id] = p;
     }
 
     for (let pID in data) {
         pDetails.getDetails(pID, function(detail) {
-            // data[pID].push(detail.ANNUAL_INCOME, detail.OPTIONAL_INSURED, detail.HEIGHT, detail.WEIGHT, detail.TOBACCO, detail.MARITAL_STATUS);
             data[pID][5] = detail.ANNUAL_INCOME;
             data[pID][6] = detail.OPTIONAL_INSURED;
             data[pID][7] = detail.HEIGHT;
@@ -82,7 +80,6 @@ participant.getParticipant("Washington", function (participants) {
                 for (let i=11; i<21; i++) {
                    data[pID][i] = -1;
                 }
-                // data[pID].push(-1,-1,-1,-1,-1,-1,-1,-1,-1,-1);
             }
             quote.getQuote(pID, function(quote) {
                 data[pID][21] = quote.BRONZE;
