@@ -1,7 +1,7 @@
 var request = require('request');
 
 function getParticipant(state, callback) {
-    let url = "https://v3v10.vitechinc.com/solr/v_participant/select?indent=on" + "&q=state:" + state + "&wt=json" + "&rows=50";
+    let url = "https://v3v10.vitechinc.com/solr/v_participant/select?indent=on" + "&q=state:" + state + "&wt=json" + "&rows=6000";
 
     // Array to hold participant objects
     let participants = [];
@@ -29,6 +29,8 @@ function getParticipant(state, callback) {
                 participants.push(participant);
             }
             callback(participants);
+        } else {
+            console.log(error);
         }
     });
 }

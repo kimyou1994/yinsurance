@@ -26,6 +26,8 @@ function getDetails(id, callback) {
                 detail.MARITAL_STATUS = 1;
             }
             callback(detail);
+        } else {
+            console.log(error);
         }
     });
 }

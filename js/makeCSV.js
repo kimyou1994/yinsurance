@@ -4,8 +4,6 @@ const pDetails = require('./pDetails.js');
 const participant = require('./participant.js');
 const quote = require('./quote.js');
 
-// let preCons = conditions.getConditions();
-
 let headers = [ ['id',
         'age',
         'sex',
@@ -34,16 +32,14 @@ let headers = [ ['id',
         'purchased'] ];
 
 csv(headers, function (err, res) {
-    console.log(res);
-    fs.writeFile('data.csv', res);
+    fs.writeFile('data/' + process.argv[3] + '.csv', res);
 });
 
 let data = {};
 
-participant.getParticipant("Washington", function (participants) {
+participant.getParticipant(process.argv[2], function (participants) {
     for (let i=0; i<participants.length; i++) {
         let cur = participants[i];
-        // let p = [];
         let p = Array(26).fill(0);
         p[0] = cur.id;
         p[1] = cur.DOB;
@@ -88,7 +84,7 @@ participant.getParticipant("Washington", function (participants) {
                 data[pID][24] = quote.PLATINUM;
                 data[pID][25] = quote.PURCHASED;
                 let input = [data[pID]];
-                fs.appendFile('data.csv', data[pID].join(',') + '\n');
+                fs.appendFile('data/'+ process.argv[3] + '.csv', data[pID].join(',') + '\n');
             });
         });
     }
