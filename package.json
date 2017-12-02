@@ -19,6 +19,7 @@
   "homepage": "https://github.com/williamliu52/insurance-hack#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "csv-stringify": "^2.0.0",
     "express": "^4.16.2",
     "path": "^0.12.7",
     "request": "^2.83.0"
