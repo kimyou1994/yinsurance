@@ -1,6 +1,6 @@
 const csv = require('csv-stringify');
 const fs = require('fs');
-const conditions = require('./conditions.js');
+const pDetails = require('./pDetails.js');
 const participant = require('./participant.js');
 
 // let preCons = conditions.getConditions();
