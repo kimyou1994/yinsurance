@@ -1,6 +1,6 @@
 const csv = require('csv-stringify');
 const fs = require('fs');
-const conditions = require('./conditions.js');
+const pDetails = require('./pDetails.js');
 const participant = require('./participant.js');
 
 // let preCons = conditions.getConditions();
@@ -11,7 +11,9 @@ let headers = [ ['id',
         'state',
         'city',
         'income',
-        'bmi',
+        'insuredAmount',
+        'height',
+        'weight',
         'smoke',
         'married',
         'hepB',
@@ -30,16 +32,38 @@ csv(headers, function (err, res) {
     fs.writeFile('data.csv', res);
 });
 
-participant.getParticipant(function (participants) {
-        for (let i=0; i<participants.length; i++) {
-            let cur = participants[i];
-            let p = [];
-            p.push(cur.id, cur.DOB, cur.sex, cur.state, cur.city);
-            let data = [p];
-            csv(data, function (err, res) {
-                console.log(res);
+let data = {};
+
+participant.getParticipant("Vermont", function (participants) {
+    for (let i=0; i<participants.length; i++) {
+        let cur = participants[i];
+        let p = [];
+        p.push(cur.id, cur.DOB, cur.sex, cur.state, cur.city);
+        data[cur.id] = p;
+    }
+
+    for (let pID in data) {
+        pDetails.getDetails(pID, function(detail) {
+            data[pID].push(detail.ANNUAL_INCOME, detail.OPTIONAL_INSURED, detail.HEIGHT, detail.WEIGHT, detail.TOBACCO, detail.MARITAL_STATUS);
+            if (detail.PRE_CONDITIONS) {
+                let conditions = JSON.parse(detail.PRE_CONDITIONS);
+                for (let i=0; i<conditions.length; i++) {
+                    let c = conditions[i];
+                    if (c.Risk_factor === "Low") {
+                        data[pID].push(-1);
+                    } else if (c.Risk_factor === "Medium") {
+                        data[pID].push(0);
+                    } else {
+                        data[pID].push(1);
+                    }
+                }
+            } else {
+                data[pID].push(-1,-1,-1,-1,-1,-1,-1,-1,-1,-1);
+            }
+            let input = [data[pID]];
+            csv(input, function (err, res) {
                 fs.appendFile('data.csv', res);
             });
-        }
+        });
     }
-);
+});

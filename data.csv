@@ -1,101 +1,101 @@
-id,age,sex,state,city,income,bmi,smoke,married,hepB,cPalsy,diarrhea,tachycardia,apnea,fracture,heartBeat,type2,hiv,hemorrhage
-1318,23,M,Alaska,Akutan
-1319,18,F,Alaska,Cold Bay
-1320,18,M,Alaska,False Pass
-1321,18,F,Alaska,King Cove
-1324,22,M,Alaska,Atka
-1325,21,F,Alaska,Saint George Island
-1326,23,M,Alaska,Nikolski
-1329,23,F,Alaska,Dutch Harbor
-1330,22,M,Alaska,Anchorage
-1331,23,F,Alaska,Anchorage
-1332,18,M,Alaska,Anchorage
-1334,20,M,Alaska,Jber
-1335,18,F,Alaska,Jber
-1338,24,M,Alaska,Anchorage
-1339,20,F,Alaska,Anchorage
-1340,20,M,Alaska,Anchorage
-1343,20,F,Alaska,Anchorage
-1344,20,M,Alaska,Anchorage
-1345,21,F,Alaska,Anchorage
-1348,18,M,Alaska,Anchorage
-1349,22,F,Alaska,Anchorage
-1350,23,M,Alaska,Anchorage
-1351,19,F,Alaska,Anchorage
-1352,24,M,Alaska,Anchorage
-1353,24,F,Alaska,Anchorage
-1354,23,M,Alaska,Anchorage
-1357,20,F,Alaska,Eagle River
-1359,23,F,Alaska,Anchorage
-1360,19,M,Alaska,Anchorage
-1361,20,F,Alaska,Kongiganak
-1362,22,M,Alaska,Akiachak
-1363,19,F,Alaska,Akiak
-1364,22,M,Alaska,Aniak
-1365,21,F,Alaska,Bethel
-1367,24,F,Alaska,Crooked Creek
-1368,21,M,Alaska,Eek
-1374,21,M,Alaska,Kwigillingok
-1377,21,F,Alaska,Napakiak
-1378,23,M,Alaska,Toksook Bay
-1379,22,F,Alaska,Nunapitchuk
-1380,18,M,Alaska,Platinum
-1381,22,F,Alaska,Quinhagak
-1382,24,M,Alaska,Red Devil
-1385,21,F,Alaska,Tuntutuliak
-1386,22,M,Alaska,Tununak
-1387,18,F,Alaska,Nightmute
-1388,23,M,Alaska,King Salmon
-1390,23,M,Alaska,South Naknek
-1391,19,F,Alaska,Clear
-1392,18,M,Alaska,Cantwell
-1393,22,F,Alaska,Healy
-1394,22,M,Alaska,Anderson
-1396,21,M,Alaska,Aleknagik
-1397,18,F,Alaska,Clarks Point
-1398,20,M,Alaska,Dillingham
-1400,21,M,Alaska,Manokotak
-1402,19,M,Alaska,Togiak
-1403,24,F,Alaska,Fairbanks
-1404,18,M,Alaska,Eielson Afb
-1405,19,F,Alaska,Fort Wainwright
-1408,20,M,Alaska,Fairbanks
-1410,21,M,Alaska,Fairbanks
-1412,23,M,Alaska,Fairbanks
-1413,21,F,Alaska,Fairbanks
-1414,20,M,Alaska,Salcha
-1415,18,F,Alaska,Two Rivers
-1420,21,M,Alaska,Juneau
-1423,19,F,Alaska,Juneau
-1425,20,F,Alaska,Auke Bay
-1427,20,F,Alaska,Juneau
-1428,22,M,Alaska,Anchor Point
-1429,18,F,Alaska,Clam Gulch
-1430,22,M,Alaska,Cooper Landing
-1431,18,F,Alaska,Homer
-1435,24,F,Alaska,Moose Pass
-1434,24,M,Alaska,Kenai
-1436,19,M,Alaska,Nikiski
-1437,18,F,Alaska,Ninilchik
-1441,19,F,Alaska,Sterling
-1442,23,M,Alaska,Tyonek
-1445,20,F,Alaska,Ketchikan
-1446,19,M,Alaska,Port Lions
-1447,24,F,Alaska,Karluk
-1448,21,M,Alaska,Kodiak
-1450,20,M,Alaska,Larsen Bay
-1451,19,F,Alaska,Old Harbor
-1452,18,M,Alaska,Ouzinkie
-1453,20,F,Alaska,Kodiak
-1454,20,M,Alaska,Alakanuk
-1455,24,F,Alaska,Chevak
-1456,21,M,Alaska,Emmonak
-1457,19,F,Alaska,Marshall
-1458,23,M,Alaska,Hooper Bay
-1463,18,F,Alaska,Saint Marys
-1465,22,F,Alaska,Nunam Iqua
-1466,24,M,Alaska,Chignik Lake
-1469,22,F,Alaska,Chignik Lagoon
-1470,23,M,Alaska,Egegik
-1471,24,F,Alaska,Iliamna
-1472,24,M,Alaska,Levelock
+id,age,sex,state,city,income,insuredAmount,height,weight,smoke,married,hepB,cPalsy,diarrhea,tachycardia,apnea,fracture,heartBeat,type2,hiv,hemorrhage
+314,22,M,California,Oroville,300000,900000,53,185,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+299,18,F,California,Bangor,100000,700000,63,113,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+334,21,M,California,Mountain Ranch,300000,500000,66,107,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+356,20,M,California,Byron,100000,700000,64,119,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+310,21,M,California,Forest Ranch,300000,700000,57,246,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+300,18,M,California,Berry Creek,200000,900000,68,195,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+335,18,F,California,Murphys,100000,900000,67,157,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+885,19,F,California,Castro Valley,200000,500000,71,167,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+893,24,F,California,San Leandro,100000,900000,61,144,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+326,25,M,California,Avery,100000,800000,58,149,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+346,22,M,California,Maxwell,300000,700000,61,195,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+878,19,M,California,Hayward,100000,800000,63,232,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+343,24,F,California,Arbuckle,300000,600000,56,222,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+303,20,F,California,Chico,100000,700000,78,173,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+307,23,F,California,Durham,100000,700000,66,275,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+309,18,F,California,Forbestown,200000,800000,50,110,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+923,18,F,California,Oakland,100000,600000,69,190,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+321,25,F,California,Chico,100000,600000,64,145,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+320,23,M,California,Richvale,500000,700000,67,164,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+349,23,F,California,Williams,100000,800000,64,158,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+350,19,M,California,Discovery Bay,900000,900000,65,194,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+336,19,M,California,Rail Road Flat,100000,700000,64,104,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+912,20,M,California,Oakland,100000,500000,65,119,0,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+881,21,F,California,Hayward,700000,500000,67,275,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+341,24,F,California,West Point,100000,900000,62,246,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+353,21,F,California,Antioch,100000,700000,62,100,0,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+312,18,M,California,Magalia,200000,800000,71,157,0,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+330,23,M,California,Douglas Flat,100000,800000,57,106,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+897,23,F,California,Pleasanton,100000,500000,69,192,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+323,23,F,California,Altaville,100000,700000,65,187,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+874,18,M,California,Fremont,200000,500000,51,279,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+316,23,M,California,Paradise,100000,600000,62,118,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+882,20,M,California,Castro Valley,100000,900000,68,164,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+918,23,M,California,Oakland,200000,800000,65,146,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+329,18,F,California,Copperopolis,300000,900000,73,225,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+352,21,M,California,Alamo,100000,700000,69,192,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+906,22,M,California,Oakland,100000,700000,62,100,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+355,23,F,California,Brentwood,200000,900000,69,292,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+908,23,M,California,Oakland,100000,700000,63,148,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+913,25,F,California,Oakland,100000,600000,71,135,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+876,23,M,California,Hayward,100000,800000,57,137,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+887,19,F,California,Hayward,300000,900000,64,157,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+332,22,M,California,Hathaway Pines,200000,500000,54,289,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+888,23,M,California,Newark,100000,700000,69,163,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+892,21,M,California,San Leandro,400000,900000,59,181,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+909,20,F,California,Oakland,300000,700000,58,238,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+328,23,M,California,Campo Seco,100000,900000,67,102,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+921,24,F,California,Oakland,800000,800000,64,193,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+905,21,F,California,Emeryville,200000,500000,69,199,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+914,21,M,California,Oakland,200000,500000,69,169,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+313,23,F,California,Nelson,200000,700000,50,184,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+302,22,M,California,Chico,100000,600000,76,148,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+308,23,M,California,Feather Falls,100000,800000,58,129,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+331,22,F,California,Glencoe,100000,800000,66,257,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+873,21,F,California,Fremont,500000,800000,61,111,0,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+880,18,M,California,Hayward,100000,600000,63,133,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+315,23,F,California,Oroville,300000,800000,79,101,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+319,19,F,California,Chico,100000,500000,63,128,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+327,18,F,California,Burson,200000,600000,67,139,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+899,20,F,California,Oakland,100000,700000,63,175,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+922,18,M,California,Oakland,200000,900000,69,220,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+342,21,M,California,Wilseyville,200000,800000,61,141,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+898,23,M,California,Oakland,500000,700000,54,126,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+348,19,M,California,Stonyford,200000,700000,76,154,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+871,18,F,California,Alameda,300000,800000,52,155,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+339,18,F,California,Valley Springs,300000,800000,62,185,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+915,25,F,California,Oakland,300000,800000,66,159,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+884,22,M,California,Livermore,100000,500000,66,234,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+907,24,F,California,Oakland,200000,900000,56,198,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+344,23,M,California,Colusa,200000,500000,62,138,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+877,22,F,California,Hayward,100000,500000,68,114,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+354,20,M,California,Bethel Island,200000,600000,62,106,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+924,19,M,California,Oakland,300000,500000,69,206,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+911,23,F,California,Oakland,200000,500000,62,149,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+324,22,M,California,Angels Camp,300000,800000,65,123,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+927,18,F,California,Berkeley,700000,900000,65,156,0,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+931,24,F,California,Berkeley,400000,800000,58,277,0,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+933,18,F,California,Berkeley,400000,700000,51,104,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+947,25,F,California,Pine Grove,100000,600000,67,123,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+935,21,F,California,Berkeley,700000,700000,63,131,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+940,19,M,California,Markleeville,100000,800000,69,174,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+942,24,M,California,Fiddletown,400000,900000,64,283,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+941,21,F,California,Amador City,100000,700000,79,115,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+945,23,F,California,Kit Carson,100000,600000,65,139,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+937,19,F,California,Berkeley,200000,500000,55,111,0,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+943,19,F,California,Ione,300000,500000,51,169,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+936,20,M,California,Berkeley,200000,900000,68,168,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+948,18,M,California,Pioneer,100000,500000,56,145,0,1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1
+949,22,F,California,Plymouth,100000,700000,71,148,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+953,24,F,California,Drytown,100000,600000,65,117,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+932,19,M,California,Albany,300000,700000,79,183,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+946,22,M,California,Martell,200000,600000,59,123,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+952,23,M,California,Volcano,200000,900000,62,152,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+934,19,M,California,Berkeley,100000,900000,79,121,0,0,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+896,20,M,California,Union City,200000,500000,69,112,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+926,22,M,California,Oakland,800000,900000,63,186,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+891,24,F,California,San Leandro,100000,500000,69,101,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+886,22,M,California,Fremont,900000,900000,59,235,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+900,20,M,California,Oakland,500000,500000,69,141,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
+919,22,F,California,Oakland,100000,500000,67,106,0,1,-1,0,-1,-1,-1,-1,-1,-1,-1,-1
