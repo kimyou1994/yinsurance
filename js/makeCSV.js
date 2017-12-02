@@ -71,7 +71,7 @@ participant.getParticipant(process.argv[2], function (participants) {
                     }
                 }
             } else {
-                for (let i=11; i<21; i++) {
+                for (let i=10; i<20; i++) {
                    data[pID][i] = -1;
                 }
             }
