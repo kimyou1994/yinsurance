@@ -33,7 +33,7 @@ app.post('/api/premium', function (req, res) {
 
 // Serve the front-end web form for users
 app.get('*', function(req, res) {
-    response.sendFile(path.resolve(__dirname, './client', 'index.html'));
+    response.sendFile(path.resolve(__dirname, '../client', 'index.html'));
 });
 
 app.listen(PORT, function () {
