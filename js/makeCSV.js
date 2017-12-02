@@ -34,7 +34,7 @@ csv(headers, function (err, res) {
 
 let data = {};
 
-participant.getParticipant("Vermont", function (participants) {
+participant.getParticipant("Washington", function (participants) {
     for (let i=0; i<participants.length; i++) {
         let cur = participants[i];
         let p = [];
@@ -61,9 +61,7 @@ participant.getParticipant("Vermont", function (participants) {
                 data[pID].push(-1,-1,-1,-1,-1,-1,-1,-1,-1,-1);
             }
             let input = [data[pID]];
-            csv(input, function (err, res) {
-                fs.appendFile('data.csv', res);
-            });
+            fs.appendFile('data.csv', data[pID].join(',') + '\n');
         });
     }
 });
