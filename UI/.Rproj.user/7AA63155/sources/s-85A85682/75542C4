@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1512274768775.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "75542C4",
+    "lastKnownWriteTime" : 1512299154,
+    "last_content_update" : 1512299154845,
+    "path" : "~/Desktop/YHack 2017/Insurance-Estimate/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+        "cursorPosition" : "16,3",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
