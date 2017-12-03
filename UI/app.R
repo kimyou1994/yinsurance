@@ -158,7 +158,8 @@ ui <- fluidPage(
       
       # Show a plot of the generated distribution
       dashboardBody(
-        textOutput("selected_hemorrhage")
+        textOutput("selected_hemorrhage"),
+        verbatimTextOutput("Text")
       )
    )
 )
@@ -287,6 +288,9 @@ server <- function(input, output) {
 
     result <- "predict"(model.gbm, newdata=new.plan, n.trees=300)
     print(result)
+    output$Text <- renderText({
+      paste(result)
+    })
     
   })
   output$result <- renderText({ 
