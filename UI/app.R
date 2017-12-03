@@ -6,22 +6,25 @@
 #
 #    http://shiny.rstudio.com/
 #
-
+library(shinydashboard)
 library(shiny)
+library(gbm)
+library(data.table)
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
    
    # Application title
-   titlePanel("Insurance Estimate"),
+  # titlePanel("Insurance Estimate"),
    
    # Sidebar with a slider input for number of bins 
-   sidebarLayout(
-      sidebarPanel(
+   dashboardPage(
+     dashboardHeader(title = "Insurance Estimate"),
+      dashboardSidebar(
         textInput("name", h3("Name"), 
                   value = "Enter name..."),
         textInput("age", h3("Age"), 
-                  value = "Enter age..."),
+                  value = "20"),
         fluidRow(
           column(6, 
                  numericInput("lb", 
@@ -154,7 +157,7 @@ ui <- fluidPage(
       ),
       
       # Show a plot of the generated distribution
-      mainPanel(
+      dashboardBody(
         textOutput("selected_hemorrhage")
       )
    )
@@ -277,9 +280,14 @@ server <- function(input, output) {
                      55702,58073,47238,53017,47275,55653,62912,56990,66262,64129,42019,55638,60214)
     differenceincome <- as.integer(input$income) - stateincome[as.integer(input$state) + 1] 
     bmi <- as.integer(input$lb)/(as.integer(input$inch)* as.integer(input$inch))*703
-    val <- c(0, input$age, input$gender, input$state, input$income, input$insured, input$inch, input$lb, smoking, married, hepb, cparsy,
-             diarr, tachy, apn, frac, heart, ty2, hv, 0, 0, 0, 0, 0, stateincome[as.integer(input$state) + 1], differenceincome, bmi )
-    print(val[1])
+    val <- c(0, age=as.integer(input$age), input$gender, input$state, input$income, input$insured, input$inch, input$lb, smoking, married, hepb, cparsy,
+             diarr, tachy, apn, frac, heart, ty2, hv, 20,20,40,30,70, 40, 110, 0, stateincome[as.integer(input$state) + 1], differenceIncome=differenceincome, bmi )
+    print(val)
+    new.plan = data.frame(wt=val)
+    model <- readRDS("model2.rds")
+    #model.gbm <- load(path.expand("~/model2.Rdata"))
+    "predict"(model.gbm, newdata=new.plan, n.trees=300)
+    
   })
   output$selected_hemorrhage <- renderText({ 
     paste("You have selected", input$hemorrhagelevel)
