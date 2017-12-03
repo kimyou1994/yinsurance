@@ -280,19 +280,17 @@ server <- function(input, output) {
                      55702,58073,47238,53017,47275,55653,62912,56990,66262,64129,42019,55638,60214)
     differenceincome <- as.integer(input$income) - stateincome[as.integer(input$state) + 1] 
     bmi <- as.integer(input$lb)/(as.integer(input$inch)* as.integer(input$inch))*703
-    
-    #val <- c(0, age=as.integer(input$age), input$gender, input$state, input$income, input$insured, input$inch, input$lb, smoking, married, hepb, cparsy,
-    #         diarr, tachy, apn, frac, heart, ty2, hv, 20,20,40,30,70, 40, 110, 0, stateincome[as.integer(input$state) + 1], differenceIncome=differenceincome, bmi )
-    #print(val)
+
     new.plan = data.frame(wt=0, age=as.integer(input$age), sex=input$gender, state=input$state, income = input$income, insuredAmount = input$insured, height = input$inch, weight = input$lb, smoke = smoking, married=married,hepB= hepb, cPalsy=cparsy,
-                          diarrhea = diarr, tachycardia=tachy, apnea=apn, fracture=frac, heartBeat=heart, type2=ty2, hiv=hv, hemorrhage= 0,bronze=20,'s-b'=20,silver=40,'g-s'=30,gold=70, 'p-s'=40, platinum=110, purchased=0, stateIncome=stateincome[as.integer(input$state) + 1], diffIncome=differenceincome, bmi = bmi)
-    model <- readRDS("model2.rds")
-    #model.gbm <- load(path.expand("~/model2.Rdata"))
-    "predict"(model.gbm, newdata=new.plan, n.trees=300)
+                          diarrhea = diarr, tachycardia=tachy, apnea=apn, fracture=frac, heartBeat=heart, type2=ty2, hiv=hv, hemorrhage= 0,bronze=20,sstep=20,silver=40,gstep=30,gold=70, pstep=40, platinum=110, purchased=0, stateIncome=stateincome[as.integer(input$state) + 1], diffIncome=differenceincome, bmi = bmi)
+    model <- readRDS("model3.rds")
+
+    result <- "predict"(model.gbm, newdata=new.plan, n.trees=300)
+    print(result)
     
   })
-  output$selected_hemorrhage <- renderText({ 
-    paste("You have selected", input$hemorrhagelevel)
+  output$result <- renderText({ 
+    paste("You have selected", input$result)
   })
   
 }
